@@ -5,8 +5,6 @@ luka@luka-VirtualBox:~$ mkdir -p ${GITHUB_USERNAME}/workspace
 luka@luka-VirtualBox:~$ cd ${GITHUB_USERNAME}/workspace
 luka@luka-VirtualBox:~/Joker762-rgb/workspace$ pwd
 /home/luka/Joker762-rgb/workspace
-luka@luka-VirtualBox:~/Joker762-rgb/workspace$ cd . .
-bash: cd: слишком много аргументов
 luka@luka-VirtualBox:~/Joker762-rgb/workspace$ cd
 luka@luka-VirtualBox:~$ cd ${GITHUB_USERNAME}/workspace
 luka@luka-VirtualBox:~/Joker762-rgb/workspace$ pwd
@@ -14,12 +12,6 @@ luka@luka-VirtualBox:~/Joker762-rgb/workspace$ pwd
 luka@luka-VirtualBox:~/Joker762-rgb/workspace$ cd ..
 luka@luka-VirtualBox:~/Joker762-rgb$ pwd
 /home/luka/Joker762-rgb
-luka@luka-VirtualBox:~/Joker762-rgb$ mfdir -p workspace/tasks/
-Команда «mfdir» не найдена. Возможно, вы имели в виду:
-  команда 'mkdir' из deb-пакета coreutils (9.4-3.1ubuntu1)
-  команда 'mdir' из deb-пакета mtools (4.0.43-1build1)
-  команда 'mmdir' из deb-пакета simh (3.8.1-6.2)
-Попробуйте: sudo apt install <имя_deb-пакета>
 luka@luka-VirtualBox:~/Joker762-rgb$ mkdir -p workspace/tasks/
 luka@luka-VirtualBox:~/Joker762-rgb$ mkdir -p workspace/projects/
 luka@luka-VirtualBox:~/Joker762-rgb$ mkdir -p workspace/reports/
@@ -43,8 +35,6 @@ luka@luka-VirtualBox:~/Joker762-rgb/workspace$ ls node/bin
 node  npm
 luka@luka-VirtualBox:~/Joker762-rgb/workspace$ echo ${PATH}
 /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
-luka@luka-VirtualBox:~/Joker762-rgb/workspace$ export PATH=${PATH}: `pwd`/node/bin
-bash: export: «/home/luka/Joker762-rgb/workspace/node/bin»: это недопустимый идентификатор
 luka@luka-VirtualBox:~/Joker762-rgb/workspace$ export PATH=${PATH}:`pwd`/node/bin
 luka@luka-VirtualBox:~/Joker762-rgb/workspace$ echo ${PATH}
 /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin::/home/luka/Joker762-rgb/workspace/node/bin
@@ -59,14 +49,7 @@ sudo snap install ruby           # version 3.4.2, or
 sudo apt  install ruby-rubygems  # version 3.4.20-1
 См. 'snap info ruby', чтобы посмотреть дополнительные версии.
 luka@luka-VirtualBox:~/Joker762-rgb/workspace$ suda apt install gist
-Команда «suda» не найдена. Возможно, вы имели в виду:
-  команда 'sada' из deb-пакета plc-utils-extra (0.0.6+git20230504.1ba7d5a0-1)
-  команда 'sudo' из deb-пакета sudo (1.9.15p5-3ubuntu5)
-  команда 'sudo' из deb-пакета sudo-ldap (1.9.15p5-3ubuntu5)
-Попробуйте: sudo apt install <имя_deb-пакета>
 luka@luka-VirtualBox:~/Joker762-rgb/workspace$ sudo apt install gist
-[sudo] пароль для luka: 
-Попробуйте ещё раз.
 [sudo] пароль для luka: 
 К установке:                                                      
   gist
@@ -283,4 +266,3 @@ luka@luka-VirtualBox:~/Joker762-rgb/workspace/reports/lab01$ gist REPORT.md
 gist: (WARNING) fread failed (command) on CGM file REPORT.md
 gist: (WARNING) BEGIN METAFILE element missing
 gist: (WARNING) REPORT.md is not a binary CGM, cannot open
-
